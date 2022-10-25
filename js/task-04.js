@@ -17,13 +17,12 @@ const btnIncrementEl = document.querySelector('[data-action="increment"]');
 btnIncrementEl.addEventListener('click', counterIncrement);
 
 function counterDecrement() {
-    counterValue ? counterValue -= 1 : counterValue = 0;
+    counterValue -= 1;
     valueSpanEl.textContent = counterValue;
 };
 
 function counterIncrement () {
     counterValue += 1;
-    let valueSpanEl = document.querySelector('#value');
     valueSpanEl.textContent = counterValue;
 };
  
